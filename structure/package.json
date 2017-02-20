@@ -1,0 +1,31 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "description": "A beautiful garden coverred with blown flowers.",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.8.0",
+    "babel-plugin-transform-es3-property-literals": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-3": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ],
+    "plugins": [
+      "transform-es3-property-literals",
+      "transform-es3-member-expression-literals"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist/scripts/"
+  },
+  "author": "hjy@01cloud.cn",
+  "license": "LGPL-3.0",
+  "dependencies": {}
+}

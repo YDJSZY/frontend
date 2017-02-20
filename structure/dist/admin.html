@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>快云流量营销平台</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/admin-lte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/admin-lte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/angularjs-toaster/toaster.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/highcharts/css/highcharts.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/ui-select/dist/select.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/angular-ui-switch/angular-ui-switch.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/node_modules/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../kuaiyunapp/dist/style/main.css">
+    <link rel="icon" href="../../kuaiyunapp/dist/images/favicon.ico" type="image/x-icon">
+    <!--[if lt IE 9]>
+    <script src="./node-modules/html5shiv.min.js"></script>
+    <script src="./node-modules/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script type="text/javascript">
+        alert("请更新您的浏览器。本系统不支持Internet Explorer 6.0 和 7.0 等低版本的浏览器。");
+    </script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<!--<div class="fakeloader1" style="position:fixed; width:100%; height:100%;background-color:#dee1e2;z-index: 9999">
+    <div class="fl spinner1" style="display:none">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>-->
+<div class="wrapper">
+    <header class="main-header">
+        <a href="#admin.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-lg"><b>Title</b></span>
+            <!-- logo for regular state and mobile devices -->
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../../kuaiyunapp/dist/node_modules/admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="用户头像">
+                            <span class="hidden-xs">{{myinfo.username}}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img src="../../kuaiyunapp/dist/node_modules/admin-lte/dist/img/user2-160x160.jpg" class="img-circle"
+                                     alt="User Image">
+                                <p>
+                                    {{ myinfo.username }}
+                                </p>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#/profile/" class="btn btn-default btn-flat">个人信息</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/accounts/logout/" class="btn btn-default btn-flat">退出系统</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="treeview">
+                    <a href="">
+                        <i class="fa fa-users"></i>
+                        <span>用户管理</span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#/template/">
+                                <i class="fa fa-mobile" style="font-size: 18px"></i>
+                                template
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper" id="mainContent">
+        <div data-ng-view=""></div>
+    </div>
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <div class="pull-right hidden-xs">
+                版本 20160808
+            </div>
+            <span>
+                <strong>版本所有&copy; 2014-2016 <a href="http://www.979797.com/">厦门快云信息科技有限公司</a>.</strong>
+            </span>
+        </div>
+    </footer>
+</div>
+<toaster-container toaster-options="{'position-class':'toast-bottom-right','time-out':5000,'close-button': true}"></toaster-container>
+<script src="../../kuaiyunapp/dist/node_modules/babel-polyfill/dist/polyfill.min.js"></script>
+<script type="text/javascript">
+    function insertScript(path){
+        var s = document.createElement("script");
+        s.src = "../../kuaiyunapp/dist/node_modules/require.js";
+        s.setAttribute("data-main", path);
+        document.body.appendChild(s);
+    }
+
+    var chrome55 = false;
+    try{
+        var versionNumber = parseInt(navigator.appVersion.split("Chrome/")[1].split(" ")[0].split(".")[0]);
+        chrome55 = versionNumber >= 55;
+    }catch(e){
+        console.debug(e);
+        chrome55 = false;
+    }
+    if(chrome55) {
+        insertScript("./scripts.src/garden");
+    } else {
+        insertScript("./scripts/garden");
+    }
+</script>
+</body>
+</html>

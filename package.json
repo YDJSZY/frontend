@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "this is use to create project structure of frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "frontend": "./bin/frontend.js"
+  },
+  "author": "luwenwei",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "commander": "^2.9.0",
+    "fs-extra": "^2.0.0"
+  }
+}
