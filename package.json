@@ -1,8 +1,12 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
+  "name": "ng-frontend",
+  "version": "1.0.1",
   "description": "this is use to create project structure of frontend",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YDJSZY/ng-frontend"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
