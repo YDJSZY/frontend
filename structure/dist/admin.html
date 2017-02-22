@@ -99,7 +99,8 @@
         </section>
     </aside>
     <div class="content-wrapper" id="mainContent">
-        <div data-ng-view=""></div>
+        <fake-loader></fake-loader>
+        <div data-ng-view="" class="ng-container ainmate-scale-up"></div>
     </div>
     <footer class="main-footer">
         <div class="container-fluid">
@@ -131,9 +132,9 @@
         chrome55 = false;
     }
     if(chrome55) {
-        insertScript("./src/garden");
+        insertScript("./scripts.src/app");
     } else {
-        insertScript("./scripts/garden");
+        insertScript("./scripts/app");
     }
 </script>
 </body>
