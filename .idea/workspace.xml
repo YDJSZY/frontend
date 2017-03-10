@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dba6a7-9662-43e2-bb98-2dd322b0299d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/structure/src/config/require_config.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generateStructure.js" afterPath="$PROJECT_DIR$/lib/generateStructure.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure/dist/admin.html" afterPath="$PROJECT_DIR$/structure/dist/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure/src/app.js" afterPath="$PROJECT_DIR$/structure/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure/src/page_classes/template/template.js" afterPath="$PROJECT_DIR$/structure/src/page_classes/template/template.js" />
     </list>
     <ignored path="frontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,17 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/dist/admin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="682">
@@ -133,11 +127,11 @@
         <option value="$PROJECT_DIR$/structure/dist/views/template.html" />
         <option value="$PROJECT_DIR$/structure/.gitignore" />
         <option value="$PROJECT_DIR$/structure/illustration" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/structure/dist/admin.html" />
         <option value="$PROJECT_DIR$/lib/generateStructure.js" />
         <option value="$PROJECT_DIR$/structure/src/app.js" />
         <option value="$PROJECT_DIR$/structure/src/page_classes/template/template.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -296,12 +290,12 @@
       <workItem from="1487732120992" duration="10704000" />
       <workItem from="1487829424725" duration="359000" />
       <workItem from="1488953804820" duration="1319000" />
-      <workItem from="1489131320543" duration="299000" />
+      <workItem from="1489131320543" duration="419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27666000" />
+    <option name="totallyTimeSpent" value="27786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -618,14 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/illustration">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -673,6 +659,14 @@
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1489131585000" expanded="true" signature="1745:1830" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
