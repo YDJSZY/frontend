@@ -1,14 +1,34 @@
 /**
  * Created by Apple on 17/2/17.
  */
-require(["config/require_config"],function () {
+define(["../../../scripts/entrance"],function (entrance) {
     require([
-        "../../kuaiyunapp/dist/scripts/entrance.js",
-        "./page_classes/template/template"
-    ],function (garden,template) {
-        var app = new garden.app("angularApp",["ngRoute","toaster","ui.select","uiSwitch","ngAnimate","ngSanitize"]);
-        app.register(template.page(app.ky));
+        "kuaiyunapp",
+        "./page_classes/template/template",   
+    ],function (ky,template) {
+        var Entrance = entrance.createEntrance(ky);
+        class App extends Entrance{
+            constructor(angularName,dependsModules){
+                super(angularName,dependsModules);
+                this.register(template.page);
+            }
+
+            async run() {
+                await this.getMyInformation();
+                await this.loadConstants();
+            }
+
+            makeUrl(restApi) {
+                if(restApi.startsWith("/")) {
+                    return "/api/v1/admin" + restApi;
+                } else {
+                    return "/api/v1/admin/" + restApi;
+                }
+            }
+        }
+
+        var app = new App("angularApp",["ngRoute","toaster","ui.select","uiSwitch","ngAnimate","ngSanitize"]);
         app.start();
-        app.showLoadingImpl(true);
     })
 })
+
